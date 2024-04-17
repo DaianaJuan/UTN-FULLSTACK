@@ -20,11 +20,21 @@ ul li{
     list-style-type: none;
 }
 
+a{
+    text-decoration: none;
+    font-family:"Source Sans Pro", sans-serif ;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 400;
+    line-height:23px
+}
+
 .ulFlex{
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
+    gap: 5px;
 }
 
 img{
