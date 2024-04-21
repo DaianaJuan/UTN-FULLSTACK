@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="#">
+    <title>NAV-w3schools</title>
+</head>
+<!-- .......Corrección Enuel....... Hola Daiana,
+Trabajar con listas en la navegación no está mal en absoluto. Sin embargo, es importante tener en cuenta que esto puede complicar un poco más los estilos, lo cual puede resultar incómodo para algunas personas. Personalmente, me gusta trabajar con listas porque mejora significativamente la legibilidad del código.
+Aunque se han añadido nuevas etiquetas semánticas como <article> y <section>, en el caso de las navegaciones, es recomendable utilizar principalmente <header> y <nav>, estructurados por <div>s según la cantidad de columnas deseadas.
+En cuanto a la estructura del <header>, puedes separarlo en dos o tres secciones utilizando <div> o <section>. Por ejemplo, podrías tener el logo en una sección y la navegación en otra. Sin embargo, al notar que tienes los botones de autenticación y registro juntos, es probable que estés buscando estructurar tu navegación en tres columnas. En ese caso, es importante separar las secciones correctamente para facilitar el manejo de los estilos.
+Te mostraré un ejemplo para que puedas notar la diferencia: -->
+<body>
+    <header>
+        <nav>
+            <div class="logo-column">
+                <button type="button"><img src="../assets/images/WhatsApp_Image_2024-04-16_at_11.53.36_PM-removebg-preview.png" alt="Logo"></button>
+            </div>
+            <div class="navigation-column">
+                <ul class="ulFlex">
+                    <li><a href="#">Tutorials<i class="bi bi-caret-down-fill"></i></a></li>
+                    <li><a href="#">Exercises<i class="bi bi-caret-down-fill"></i></a></li>
+                    <li><a href="#">Certificates<i class="bi bi-caret-down-fill"></i></a></li>
+                    <li><a href="#">Services<i class="bi bi-caret-down-fill"></i></a></li>
+                </ul>
+            </div>
+            <div class="login-column">
+                <div>
+                    <input type="text" id="search" name="search" placeholder="Search...">
+                    <button type="submit">Lupa</button>
+                </div>
+                <ul class="ulFlex">
+                    <li><button type="button">Sign Up</button></li>
+                    <li><button type="button">Log in</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
+
+<!-- He creado tres columnas dentro de la etiqueta <nav>: una para el logo, otra para la lista de navegación y una tercera para los botones de inicio de sesión y registro. Cada columna está contenida en un <div> con una clase específica para facilitar el estilo CSS. Esto te permitirá tener un diseño más organizado y flexible. Por otro lado, moví el search junto con los botones de ingreso y registro. También añadí el icono de boostrap dentro del ancor, lo cual mejorará la experiencia de usuario, ya que si tenemos texto y un icono, lo primero que atinamos a hacer clic es a icono.
+Con esta estructura y un simple estilo en nav, ya deberías notar algo de magia:
+Ejemplo: display: flex, justify-content: space-around y por ultimo align-items: center, estos aplicado en nav .
+Espero haberte podido aclarar algunas dudas, caso contrario me vuelves a consultar.
+PD: en caso que no haya magia, se me escapo algo jaja. Pero debería funcionar, no estoy probando el código. -->
+
