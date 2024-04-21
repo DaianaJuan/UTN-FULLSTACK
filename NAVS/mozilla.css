@@ -26,7 +26,7 @@ li{
     width: 10.5rem;
 }
 
-.desplegables{
+.flexNav{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -34,3 +34,31 @@ li{
     justify-content: space-between;
     align-items: center;
 }
+
+.desplegables{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    gap: 10px; 
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    gap: 10px; 
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    gap: 10px; 
+}
+
