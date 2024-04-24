@@ -30,6 +30,11 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center ;
+
+    background-image: url(../assets/images/once.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover; 
 }
 
 .hijo2{
@@ -46,6 +51,11 @@
     justify-content: space-between;
     align-items: center ;
     padding: 90px;
+
+    background-image: url(../assets/images/fondoheman.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover; 
 }
 
 .hijo3{
@@ -90,16 +100,29 @@
     border-radius: 10px;
     border: 1px solid rgb(112, 112, 112);
     box-shadow: 1px 3px 5px 2px rgb(180, 178, 178);
+
+    background-image: url(../assets/images/Nightwish-Ghost-Love-Score-LIVE.webp);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover; 
 }
 
 .caja2{
     width: 150px;
     height: 150px;
-    background-color: rgb(162, 80, 255);
     border-radius: 10px;
     border: 1px solid rgb(112, 112, 112);
     box-shadow: 1px 3px 5px 2px rgb(180, 178, 178);
 }
+
+.caja2 img{
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    width: 100%; 
+}
+
+
 
 .caja3{
     width: 150px;
