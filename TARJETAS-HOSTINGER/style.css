@@ -1,0 +1,102 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+h2{
+    font-size: 36px;
+    color: #2F1C6A;
+    padding: 43px;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjetas{
+    display: flex;
+    gap: 25px;
+}
+
+.tarjeta{ 
+    border: 1px solid #d5dfff;
+    border-radius: 5px;
+    width: 321.33px;
+}
+
+.tarjeta .subtarjeta-superior{
+    height: 339px;
+    padding: 48px 32px;
+    border-bottom: 1px solid #d5dfff;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.tarjeta .subtarjeta-superior .estrellas{
+    width: 257.33px;
+    color: #673DE6;
+}
+
+.tarjeta .subtarjeta-superior .texto{
+    height: 162px;
+    font-size: 14px;
+    padding: 18px 0px 0px;
+    color: #2F1C6A;
+}
+
+.tarjeta .subtarjeta-superior a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #673DE6;
+    padding: 20px 0px 0px;
+}
+
+.tarjeta .subtarjeta-inferior{
+    height: 113px;
+    padding: 24px 32px;
+    background-color: #f4f5ff;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.tarjeta .subtarjeta-inferior img{
+    width: 64px;
+    margin: 0px 0px 11px 0px;
+}
+
+.tarjeta .subtarjeta-inferior span{
+    font-size: 18px;
+    color: #2F1C6A;
+}
+
+.tarjeta .subtarjeta-inferior p{
+    font-size: 14px;
+    color: #2F1C6A;
+}
+
+button{
+    margin: 50px;
+    padding: 12px 48px;
+    font-size: 16px;
+    color: #673DE6;
+    background-color: #FFFFFF;
+    border: 2px solid #673DE6;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+button:hover{
+    background-color: #ebe4ff;
+    transition: 0.5s;
+}
+
