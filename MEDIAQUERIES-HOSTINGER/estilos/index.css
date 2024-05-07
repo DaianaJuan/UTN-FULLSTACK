@@ -1,0 +1,13 @@
+@import url('./imports.css');
+@import url('./general.css');
+@import url('./fuente.css');
+@import url('./variable.css');
+
+.color-ppal{
+    background-color: var(--color-principal);
+}
+
+.color-tarjeta{
+    background-color: var(--color-tarjetas);
+}
+

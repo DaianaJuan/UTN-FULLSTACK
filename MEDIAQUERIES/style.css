@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Se recomienda trabajar con proporciones y no con medidas absolutas*/
+
+.padre{
+    width: 100vw;
+    height: 100vh;
+    background-color:peru;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.hijo{
+    width: 100%; /*Le doy un 100% del ancho del padre*/
+    height: 400px;
+    border-radius: 15px;
+    background-color:rgb(230, 175, 193);
+    border: 1px solid white;
+    max-width: 500px; /*Define el maximo. el elemento no puede crecer mas de 500px. lo mismo con min-width*/
+}
+
+/*Cuando mi pantalla tenga 1000px para arriba se va a aplicar este css. Siempre se escribe abajo del código.
+Solo se pone la propiedad que quiero cambiar*/
+@media screen and (min-width: 1000px){
+    .padre{
+        flex-direction: row;
+        background-color: rgb(139, 102, 64);
+    }
+    .hijo{
+        background-color: bisque;
+        border-color: rgb(88, 88, 88);
+    }
+
+}

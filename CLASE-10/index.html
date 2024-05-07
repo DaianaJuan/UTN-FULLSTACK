@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>POSITION</title>
+</head>
+<body>
+
+    <!-- POSITION: HAY 4 TIPOS 
+    * Tiene un valos por defecto que es STATIC
+    * ABSOLUTE: cuenta la distancia desde el 00 de la pag, no del padre (esquina izquierda, ya no cuenta
+    desde su position original) no pertenece ni interactua con los hermanos y el padre
+    * FIXED: Siempre se va a ir al 00 de la paj. Siempre queda pegado en la pantalla, como los anuncios o el 
+    icono de wsp.
+    * STICKY
+    * RELATIVE: activo las propiedades (TOP, BOTTOM), (LEFT Y RIGT)-> usar solo uno y ponerlo en 
+    positivo o negativo. TOP Y LEFT TIENEN MAS PRIORIDAD... z-index: trae el elemento al frente, es el eje de 
+    profundidad y se puede usar en todos lados-->
+
+
+    <!-- RELATIVE -->
+    <div class="padre">
+        <div class="hijo"></div>
+        <div class="hijo"></div>
+        <div class="hijo"></div>
+    </div>
+    <!-- ABSOLUTE -->
+    <div class="padre2">
+        
+        <div class="hijo2"></div>
+        <div class="hijo2"></div>
+        <div class="hijo2"></div>
+    </div>
+<!--
+    <div class="buscador-contenedor">
+        <input type="text">
+        <div class="lupita"></div>
+    </div>
+-->
+    <!-- FIXED -->
+    <div class="padre3">
+        
+        <div class="hijo3"></div>
+        <div class="hijo3"></div>
+        <div class="hijo3"></div>
+    </div>
+
+    <!-- STICKY -->
+    <div class="padre4">
+        
+        <div class="hijo4"></div>
+        <div class="hijo4"></div>
+        <div class="hijo4"></div>
+    </div>
+    
+</body>
+</html>

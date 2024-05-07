@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*POSITION RELATIVE
+
+.padre{
+    width: 100vw;
+    height: 100vh;
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.hijo{
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    border: 1px solid white;
+}
+
+.hijo:nth-child(1){
+background-color: coral;
+}
+.hijo:nth-child(2){
+background-color: darkgoldenrod;
+position: relative;
+left: 200px;
+top: 50px;
+}
+.hijo:nth-child(3){
+background-color: darkcyan;
+z-index: 2;
+}
+*/
+
+/*POSITION ABSOLUTE
+
+.padre2{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(184, 67, 91);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    position: relative; /*se agrega para que el 00 empiece desde el padre/
+}
+
+.hijo2{
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    border: 1px solid white;
+}
+
+.hijo2:nth-child(1){
+background-color: rgb(243, 79, 20);
+}
+.hijo2:nth-child(2){
+background-color: rgb(102, 75, 7);
+position: absolute;
+left: 0px;
+top: 0px;
+}
+.hijo2:nth-child(3){
+background-color: darkcyan;
+z-index: 2;
+}
+
+.buscador-contenedor{
+    position:relative;
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.buscador-contenedor input{
+    width: 100%;
+}
+
+.buscador-contenedor .lupita{
+    width: 16px;
+    height: 16px;
+    background-color: red;
+    border-radius: 100%;
+    position: absolute;
+    right: 10px;
+}*/
+
+/*POSITION FIXED
+
+.padre3{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(221, 26, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.hijo3{
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    border: 1px solid white;
+}
+
+.hijo3:nth-child(1){
+background-color: rgb(255, 194, 80);
+}
+.hijo3:nth-child(2){
+background-color: rgb(11, 184, 132);
+position: fixed;
+left: 0px;
+top: 0px;
+}
+.hijo3:nth-child(3){
+background-color: rgb(139, 0, 53);
+z-index: 2;
+}*/
+
+/*POSITION STICKY*/
+
+.padre4{
+    width: 100vw;
+    height: 500vh;
+    background-color: rgb(182, 3, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.hijo4{
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    border: 1px solid white;
+}
+
+.hijo4:nth-child(1){
+background-color:darkorchid;
+}
+.hijo4:nth-child(2){
+background-color:darkseagreen;
+position: sticky;
+left: 0px;
+top: 30px;
+}
+.hijo4:nth-child(3){
+background-color:hotpink;
+z-index: 2;
+}

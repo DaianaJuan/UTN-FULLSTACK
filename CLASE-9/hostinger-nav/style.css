@@ -27,6 +27,12 @@ header{
     padding: 0px 30px;
     height: 70px;
     align-items: center;
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 3;
 }
 
 .logo-container{
@@ -48,15 +54,6 @@ header{
 
 .logo-container .selector-lenguaje .pais{
     width: 35px;
-}
-
-.logo-container .selector-lenguaje .lenguaje{
-
-}
-
-
-header nav{
-
 }
 
 nav .links-container{
@@ -84,4 +81,36 @@ nav .links-container .link-item .btn-link{
     padding: 10px;
     border-radius: 5px;
 
+}
+
+
+.padre4{
+    width: 100vw;
+    height: 500vh;
+    background-color: rgb(182, 3, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.hijo4{
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    border: 1px solid white;
+}
+
+.hijo4:nth-child(1){
+background-color:darkorchid;
+}
+.hijo4:nth-child(2){
+background-color:darkseagreen;
+position: sticky;
+left: 0px;
+top: 30px;
+}
+.hijo4:nth-child(3){
+background-color:hotpink;
+z-index: 2;
 }
