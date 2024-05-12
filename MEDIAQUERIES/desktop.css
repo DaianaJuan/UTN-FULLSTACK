@@ -10,6 +10,10 @@ html{
     font-size: 20px;
 }
 
+body{
+    background-color: khaki;
+}
+
 nav{
     display: none; /*Desaparece los elementos*/
 }
@@ -27,6 +31,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    background-color: rosybrown;
 }
 
 @media screen and (min-width: 830px){

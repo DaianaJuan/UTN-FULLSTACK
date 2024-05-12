@@ -1,3 +1,61 @@
 *{
     font-family: var(--fuente);
+    font-size: 16px;
+    color: var(--color-texto);
+}
+
+.subtitulo{
+    font-size: 1.4rem;
+    line-height: 32px; /*entre lineas*/
+    padding-bottom: 1.5rem;
+}
+
+.lista .texto{
+    font-size: 1rem;
+    line-height: 23px;
+}
+
+
+@media screen and (min-width: 650px){
+
+    .subtitulo{
+        font-size: 1.7rem;
+        line-height: 45px;
+    }
+    .lista .texto{
+        font-size: 1.2rem;
+        line-height: 32px;
+    }
+    .tarjeta .texto{
+        font-size: 1.2rem;
+        line-height: 32px;
+    }
+}
+
+@media screen and (min-width: 1050px){
+    .subtitulo{
+        font-size: 2rem;
+        line-height: 45px;
+        padding-bottom: 3rem;
+    }
+    .lista .texto{
+        line-height: 45px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .subtitulo{
+        font-size: 2.1rem;
+        line-height: 40px;
+        padding-bottom: 2rem;
+    }
+    .lista .texto{
+        font-size: 1rem;
+        line-height: 25px;
+    }
+    .tarjeta .texto{
+        font-size: 1rem;
+        line-height: 25px;
+    }
+
 }
