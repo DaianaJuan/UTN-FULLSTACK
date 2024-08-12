@@ -498,11 +498,12 @@ function generarEmail(usuario,dominio){
 
 alert(generarEmail("daianazajuan","gmail.com"));
 */
-
-//27)Necesitamos un programa que pida ingresar una cantidad de grados Celsius, mediante el siguiente mensaje:
-//Ingresá una cantidad de grados Celsius
-//Con esta información, el programa deberá mostrar la conversión de grados Celsius a grados 
-//Fahrenheit con el mensaje: La conversión de {grados} grados Celsius a Fahrenheit es: {resultado}
+/*
+27)Necesitamos un programa que pida ingresar una cantidad de grados Celsius, mediante el siguiente mensaje:
+Ingresá una cantidad de grados Celsius
+Con esta información, el programa deberá mostrar la conversión de grados Celsius a grados 
+Fahrenheit con el mensaje: La conversión de {grados} grados Celsius a Fahrenheit es: {resultado}
+*/
 console.log("EJERCICIO 27)");
 /*
 function convertir(celsius){
@@ -515,18 +516,19 @@ while(!celsius || isNaN(celsius)){
     let celsius = parseInt(prompt("Error!! volvé a ingresar una cantidad de grados Celsius"));
 };
 alert("La conversión de "+celsius+" grados Celsius a Fahrenheit es: "+convertir(celsius));
-*/
 
-//28)Necesitamos un programa que pida ingresar la distancia de un recorrido, mediante el mensaje:
-//Ingresá la distancia del recorrido
-//Con esta información, el programa deberá calcular cuánto tiempo tardaría en completar el recorrido en 
-//distintos medios de transporte y luego mostrarlo mediante el siguiente mensaje: Para la distancia 
-//{distancia} km en bicicleta el tiempo de viaje es {resultadoEnBicicleta} hora/s, a pie {resultadoAPie} 
-//hora/s y en auto {resultadoEnAuto} hora/s
-//Las velocidades de los medio de transporte son:
-//a pie : 5 km/ hs
-//bicicleta : 10 km/ hs
-//auto : 50 km/hs
+/*
+28)Necesitamos un programa que pida ingresar la distancia de un recorrido, mediante el mensaje:
+Ingresá la distancia del recorrido
+Con esta información, el programa deberá calcular cuánto tiempo tardaría en completar el recorrido en 
+distintos medios de transporte y luego mostrarlo mediante el siguiente mensaje: Para la distancia 
+{distancia} km en bicicleta el tiempo de viaje es {resultadoEnBicicleta} hora/s, a pie {resultadoAPie} 
+hora/s y en auto {resultadoEnAuto} hora/s
+Las velocidades de los medio de transporte son:
+a pie : 5 km/ hs
+bicicleta : 10 km/ hs
+auto : 50 km/hs
+*/
 console.log("EJERCICIO 28)");
 /*
 function calcular(distancia){
@@ -543,24 +545,25 @@ while(!distancia||isNaN(distancia)||distancia<0){
 };
 
 calcular(distancia);
+
+/*
+29)Definí una función puedeVerPelicula que reciba como argumentos un número edad y un booleano 
+tieneAutorizacion, y retorne true si la persona está habilitada para ver la película o false si no. 
+Sólo puede ver la película si: tiene 15 años o más, o tiene autorización de sus padres.
+
+datos con los cuales deben ser enviados a la función
+
+puedeVerPelicula(12, false)
+false
+puedeVerPelicula(12, true)
+true
+puedeVerPelicula(16, false)
+true
+puedeVerPelicula(18, true)
+true
 */
-
-//29)Definí una función puedeVerPelicula que reciba como argumentos un número edad y un booleano 
-//tieneAutorizacion, y retorne true si la persona está habilitada para ver la película o false si no. 
-//Sólo puede ver la película si: tiene 15 años o más, o tiene autorización de sus padres.
-
-//datos con los cuales deben ser enviados a la función
-
-//puedeVerPelicula(12, false)
-//false
-//puedeVerPelicula(12, true)
-//true
-//puedeVerPelicula(16, false)
-//true
-//puedeVerPelicula(18, true)
-//true
 console.log("EJERCICIO 29)");
-
+/*
 function puedeVerPelicula(edad,tieneAutorizacion){
     if (edad >= 15 || tieneAutorizacion) {
         return true
@@ -575,25 +578,171 @@ console.log(puedeVerPelicula(12, true));
 console.log(puedeVerPelicula(16, false));
 console.log(puedeVerPelicula(18, true));
 
-//30)Definí una función esVocal que tome por parámetro un string letra y nos indique si letra es una vocal.
-//datos con los cuales deben ser enviados a la función:
+/*30)Definí una función esVocal que tome por parámetro un string letra y nos indique si letra es una vocal.
+datos con los cuales deben ser enviados a la función:
 
-//esVocal('a')
-//true
-//esVocal('n')
-//false
-//esVocal('e')
-//true
+esVocal('a')
+true
+esVocal('n')
+false
+esVocal('e')
+true
+*/
 /*
 function esVocal(letra){
-    if(letra === 'a'||letra === 'e'||letra === 'i'||letra === 'o'||letra === 'u'){
-        return true
-    }
-    else{
-        return false
-    }
+    return (letra === 'a'||letra === 'e'||letra === 'i'||letra === 'o'||letra === 'u')
 }
 
 letra = prompt("Ingrese una vocal").toLowerCase();
 alert(esVocal(letra));
+
+/*
+TAREAS: 
 */
+/*1.
+Solicitar al usuario un texto y verificar si se trata de una URL con certificado ssl,
+Si cuenta con con https:// decir por consola "la url ingresada, cuenta con certificado ssl"
+Si no lo tiene pero si tiene http:// "la url ingresada no cuenta con certificado ssl"
+Si no posee ninguno decir "no has ingresado una url valida"
+let texto = prompt('Ingresar texto').toLowerCase();
+console.log("El texto ingresado es: "+ texto);
+*/
+/*
+if(texto.startsWith('https://')){
+    console.log("La url ingresada, cuenta con certificado ssl");
+}
+else if(texto.startsWith('http://')){
+    console.log("La url ingresada no cuenta con certificado ssl");
+}
+else{
+    console.log("No has ingresado una url valida");
+};
+
+/*2.
+Dado los siguientes texto
+"hola%20como%20estas,%20todo%bien?"
+"no%20me%20siento%20bien"
+"que%20mal"
+descifrar el codigo y mostrarlo por consola: "El codigo descifrado es: " + codigoDescifrado
+Averiguar la cantidad de caracteres y en base a el numero de caracteres mostrar
+"el mensaje es corto" entre 1 y 8 caracteres
+"el mensaje es mediano" entre 9 y 18
+"el mensaje es largo"  mas de 18
+Ademas si el mensaje cuenta con ",", "@", "-" debera decir, "el mensaje es complejo", sino decir
+"el mensaje no es complejo"
+*/
+/*
+let codigoUno = "hola%20como%20estas,%20todo%20bien?"
+let codigoDos = "no%20me%20siento%20bien"
+let codigoTres = "que%20mal"
+
+function descifrarCodigo(codigoCifrado){
+    let codigoDescifrado = codigoCifrado.replaceAll('%20',' ');
+    return codigoDescifrado
+}
+
+console.log('El código descifrado es: \n\n'+'- '+descifrarCodigo(codigoUno)+' \n'+'- '+ descifrarCodigo(codigoDos)+ ' \n'+'- '+descifrarCodigo(codigoTres))
+
+function contadorDeCaracteres(codigo){
+    let cont = 0;
+    for(let i = 0; i< codigo.length ;i++){
+        if(codigo[i]!==' '){
+            cont += 1
+        }
+    }
+    if(cont <= 8 && cont >= 1){
+        console.log("El mensaje es corto")
+    }
+    else if(cont <= 9 && cont >= 18){
+        console.log("El mensaje es mediano")
+    }
+    else{
+        console.log("El mensaje es largo")
+    }
+
+    if(codigo.includes(",", "@", "-")){
+        console.log("El mensaje es complejo")
+    }
+    else{
+        console.log("El mensaje no es complejo")
+    }
+} 
+
+console.log('### Primer mensaje: ')
+contadorDeCaracteres(codigoUno)
+console.log('### Segundo mensaje: ')
+contadorDeCaracteres(codigoDos)
+console.log('### Tercer mensaje: ')
+contadorDeCaracteres(codigoTres)
+
+/*3.
+solicitar al usuario un mensaje, y cifrarlo con %20 en los espacios. Una vez cifrado decifrarlo
+con el algoritmo anterior.
+*/
+/*
+let mensaje = prompt("Ingrese un mensaje")
+
+let mensajeCifrado = mensaje.replaceAll(' ','%20');
+console.log("El mensaje cifrado es: "+mensajeCifrado);
+
+console.log("El mensaje descifrado es: " + descifrarCodigo(mensajeCifrado))
+
+/*4.
+Solicitar al usuario una palabra y decir en consola "tiene mayuscula" en el caso de que tenga
+una maysucula, sino decir "tiene minuscula"
+*/
+/*
+let palabra = prompt("Ingrese una palabra")
+
+for(let i = 0; i < palabra.length; i++){
+    
+    let letra = palabra[i];
+
+    if(letra === letra.toUpperCase()){
+        console.log("Tiene mayuscula")
+        break
+    }
+    else{
+        console.log("Tiene minuscula")
+    }
+};
+*/
+
+function descifrador(datoCodificado){
+    let decodificado = datoCodificado.replaceAll('%20',' ');
+    return decodificado;
+}
+
+function contador(stringObtenido) {
+    let contador = stringObtenido.length;
+    return contador
+}
+
+function clasificarMensaje(stringObtenido) {
+    let cont = contador(stringObtenido);
+
+    if (cont <= 8) {
+        console.log('El mensaje es corto');
+    } else if (cont > 8 && cont <= 18) {
+        console.log('El mensaje es mediano');
+    } else if (cont > 18) {
+        console.log('El mensaje es largo');
+    }
+
+    if (stringObtenido.includes(',') || stringObtenido.includes('@') || stringObtenido.includes('-')) {
+        console.log('El mensaje es complejo');
+    } else {
+        console.log('El mensaje no es complejo');
+    }
+}
+
+
+let codigoUno = "hola%20como%20estas,%20todo%20bien?"
+console.log(descifrador(codigoUno))
+let codigoDos = "no%20me%20siento%20bien"
+console.log(descifrador(codigoDos));
+let codigoTres = "que%20mal"
+console.log(descifrador(codigoTres))
+
+console.log(contador(codigoUno))
+console.log(clasificarMensaje(codigoUno))

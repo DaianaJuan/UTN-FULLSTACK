@@ -92,7 +92,7 @@ z-index: 2;
     right: 10px;
 }*/
 
-/*POSITION FIXED
+/*POSITION FIXED*/
 
 .padre3{
     width: 100vw;
@@ -123,10 +123,10 @@ top: 0px;
 .hijo3:nth-child(3){
 background-color: rgb(139, 0, 53);
 z-index: 2;
-}*/
+}
 
 /*POSITION STICKY*/
-
+/*
 .padre4{
     width: 100vw;
     height: 500vh;
@@ -157,3 +157,4 @@ top: 30px;
 background-color:hotpink;
 z-index: 2;
 }
+*/
